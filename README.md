@@ -7,29 +7,30 @@ First install the Terraform in any operating system
  
 # Creating EC2 instance with terraform
 These are commands to deploy the EC2 instance by using Terraform:
-  terraform init 
-  terraform plan 
-  terraform apply 
-  terraform show 
+terraform init,
+terraform plan,
+terraform apply, 
+terraform show.
   
-# In that command line 
+# In the terminal 
 # Create directory for terraform as "mkdir Terraform"
-    create two files inside the terraform file and the files are
-    ec2.tf
-    provider.tf
+create two files inside the terraform file and the files are
+ec2.tf
+provider.tf
 
-# In that ec2.tf write the command to create the instances with properties like vpc and subnets
-In that ec2.tf I have created two EC2 instance 
+# In the ec2.tf write the command to create the instances with properties like vpc and subnets
 
-# In that provider.tf write the command for provider details of instance like access key,secret key,..
+# In the ec2.tf I have created two EC2 instance 
+
+# In the provider.tf write the command for provider details of instance like access key,secret key,..
 
 # Save both files as ".tf"
 
-# For viewing the details that have been deployed in the instance 
-by the command terraform plan
+# For viewing the details that have been deployed in the instance use the command
+  terraform plan
 
-# Deploy the instance using deploy commands given above.
-by the command terraform apply
+# Deploy the instance using the commands given below.
+  terraform apply
 
 ![1](https://user-images.githubusercontent.com/83658514/219050553-8942fc3b-96fb-4550-afdf-33c71fad9272.png)
 ![2](https://user-images.githubusercontent.com/83658514/219050562-5a776259-a63b-4b00-84b7-1cf06da8492b.png)
@@ -38,8 +39,8 @@ by the command terraform apply
 ![5](https://user-images.githubusercontent.com/83658514/219050544-a34394dd-21ef-4c76-bf46-ae8143278712.png)
 These are the screenshots of my deployed details by using "terraform apply" command  
 # It will load and deploy the details
-# We can view whether the instance created or not
-by the command terraform show
+# We can view whether the instance created or not using the following
+   terraform show
 
 # Open AWS console 
 Then the EC2 instance were created 
