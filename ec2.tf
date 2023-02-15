@@ -68,18 +68,18 @@ resource "aws_route_table_association" "new2-a" {
 
 # EC2 instances in public subnets
 resource "aws_instance" "server1" {
-  ami           = "ami-093613b5938a7e47c"
+  ami           = "ami-id"
   instance_type = "t2.micro"
-  subnet_id = "subnet-0dfb79ea1bd8ccd72"
+  subnet_id = "subnet-id"
   tags = {
     Name = "server1"
   }
 }
 
 resource "aws_instance" "server2" {
-  ami           = "ami-093613b5938a7e47c"
+  ami           = "ami-id"
   instance_type = "t2.micro"
-  subnet_id = "subnet-060ee5c75a1b4a2cd"
+  subnet_id = "subnet-id"
   tags = {
     Name = "server2"
   }
